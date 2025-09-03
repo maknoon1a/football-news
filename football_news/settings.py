@@ -27,13 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-ymx04w_af044-3w@62xhe$v472+5o_3w2*pqnj!h#as0@e5#p3'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
+
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-...
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "ahmad-omar-footballnews.pbp.cs.ui.ac.id"]
-...
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "https://pbp.cs.ui.ac.id/ahmad.omar/footballnews"]
 
 
 # Application definition
@@ -45,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main'
 ]
 
 MIDDLEWARE = [
