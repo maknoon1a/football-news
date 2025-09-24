@@ -35,7 +35,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "ahmad-omar-footballnews.pbp.cs.ui.ac.id"]
 
 CSRF_TRUSTED_ORIGINS = [
-    " https://pbp.cs.ui.ac.id/ahmad.omar/footballnews"
+    "https://ahmad-omar-footballnews.pbp.cs.ui.ac.id/"
 ]
 
 
